@@ -1,2 +1,27 @@
 .wrapper {
+  padding: 8px;
+  margin: 10px 0px;
+  border: 2px solid grey;
+  border-radius: 3px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.infoContainer {
+  font-family: 'Montserrat';
+  color: black;
+}
+
+.infoContainer_title {
+  font-size: 26px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  margin-bottom: 6px;
+}
+
+.infoContainer_infoPost {
+  font-size: 20px;
+  font-weight: 300;
 }

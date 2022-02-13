@@ -1,0 +1,9 @@
+.selectWrapper {
+  min-width: 80px;
+  padding: 2px;
+  border: 2px solid grey;
+  border-radius: 3px;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: 'Montserrat';
+}

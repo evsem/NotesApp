@@ -1,2 +1,12 @@
 .myButton {
+  background-color: transparent;
+  padding: 2px 8px;
+  border: 2px solid grey;
+  border-radius: 3px;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: 'Montserrat';
+  color: black;
+  letter-spacing: 1px;
+  cursor: pointer;
 }

@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: lightgrey;
+  background-color: whitesmoke;
   padding: 10px 0px;
   font-size: 16px;
   font-weight: 400;
@@ -17,4 +17,13 @@ body {
 .App {
   max-width: 700px;
   margin: 0 auto;
+}
+
+.App_warningTitle {
+  font-size: 32px;
+  font-weight: 500;
+  color: black;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-align: center;
 }
