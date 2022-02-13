@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import Form from './Components/Form/Form'
 import List from './Components/List/List'
 import './Style/App.css'
+import MyInput from './UI/MyInput/MyInput'
 import MySelect from './UI/MySelect/MySelect'
 
 const App = () => {
@@ -22,13 +23,27 @@ const App = () => {
   const removePost = (post) => {
     setPosts(posts.filter((p) => p.id !== post.id))
   }
+
+  const getSortedPosts = () => {
+    if (selectedSort) {
+      return [...posts].sort((a, b) =>
+        a[selectedSort].localeCompare(b[selectedSort])
+      )
+    }
+    return posts
+  }
+  const sortedPosts = getSortedPosts()
   const sortPosts = (sort) => {
     setSelectedSort(sort)
-    setPosts([...posts].sort((a, b) => a[sort].localeCompare(b[sort])))
   }
   return (
     <div className="App">
       <Form addPostFunc_forForm={addNewPost} />
+
+      <MyInput
+        value={searchQuery}
+        onChange={(e) => setSearchQuery(e.target.value)}
+      />
 
       <MySelect
         value={selectedSort}
@@ -41,7 +56,7 @@ const App = () => {
       />
 
       {posts.length ? (
-        <List props_forList={posts} remove={removePost} />
+        <List props_forList={sortedPosts} remove={removePost} />
       ) : (
         <h2 className="App_warningTitle"> No posts</h2>
       )}
