@@ -1,12 +1,12 @@
 .myButton {
   background-color: transparent;
-  padding: 2px 8px;
-  border: 2px solid grey;
+  padding: 2px 30px;
+  border: 2px solid #636363;
   border-radius: 3px;
-  font-size: 16px;
+  font-size: 24px;
   font-weight: 400;
-  font-family: 'Montserrat';
-  color: black;
+  font-family: "Montserrat";
+  color: #222;
   letter-spacing: 1px;
   cursor: pointer;
 }
